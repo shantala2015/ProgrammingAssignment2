@@ -1,11 +1,11 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Have 2 functions in this file makeCacheMatrix and cacheSolve
 
-## Write a short comment describing this function
+
+## This function stores the 4 function definitions as a list object
 
 makeCacheMatrix <- function(x = matrix()) {
 	inv <- NULL
-    	set <- function(y) {
+    	setmatrix <- function(y) {
         x <<- y
         inv <<- NULL
     }
@@ -19,7 +19,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This function calls the different matrix related functions stored in a list (as seen in the ## above function)
 
 cacheSolve <- function(x, ...) {
         ## If Inverse of matrix already exists in memory then return it
